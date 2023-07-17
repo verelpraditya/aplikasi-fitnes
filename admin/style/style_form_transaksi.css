@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+a
+{
+	text-decoration:none;
+	color:#09F;
+}
+a:hover
+{
+	color:#9C0;
+}
+#input
+{
+	padding:3px 5px;
+	margin:0px 3px;
+	border:1px solid #c0d3e2;
+	border-radius:3px;
+}
+#tombol
+{
+	color:#FFF;
+	padding:3px 5px;
+	background-color:#09C;
+	border:1px solid #069;
+	border-radius:3px;
+}
+#tombol:hover
+{
+	background-color:#9C0;
+	border:1px solid #990;
+}
+body {
+	color:#333;
+	background-color:#e9e9e9;
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+/* sebagai pembungkus halaman keseluruhan dan mengatur posisi ke center*/
+#keluar{
+	color:#FFF;
+	padding:5px 14px;
+	background-color:#999;
+	border-top-left-radius:14px;
+	border-bottom-left-radius:14px;
+	margin-top:5px;
+	float:right;
+}
+#keluar:hover{
+	background-color:#333;
+}
+#page {
+	width:1199px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFF;
+	box-shadow: 0px 0px 9px #999;
+}
+
+.header {
+	width:1000px;
+	padding:9px 21px;
+	background-color:#FFF;
+}
+
+.halaman {
+
+	width:1189px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:9px;
+}
+
+.halaman .tengah{
+	width:1175px;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:9px;
+	border:1px solid #c0d3e2;
+	background-color:#f0f5f9;
+}
+
+.batas_isi {
+	width:1159px;
+	margin-top:9px;
+	margin-bottom:9px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#dee9f1;
+	border:1px solid #c0d3e2;
+}
+
+.isi{
+	padding:3px;
+}

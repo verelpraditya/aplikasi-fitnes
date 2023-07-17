@@ -1,0 +1,328 @@
+body {
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#wraper {
+	margin-top: -5px;
+    background-color: #FFF;
+    border-bottom: 4px solid #C64934;
+    background: url(../images/header_bg.png);
+}
+#content {
+	text-align: center;
+	padding: 0px;
+	vertical-align: top;
+}
+h2 {
+	font: normal 150% Georgia, Tahoma;
+	color: #265180;
+}
+a:link, a:visited {
+	color: #265180;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF6600;
+	text-decoration: none;
+}
+.button1 {
+	border-right : solid 1px #0065CB;
+	border-bottom : solid 1px #0065CB;
+	background: #F97419;
+	color : #fff;
+	font-weight : bold;
+	font-size : 11px;
+	padding: 4px;
+}
+#toolbar {
+	font-size: 9px;
+}
+#toolbar tr{
+	background: #F1F3F5;
+}
+#toolbar a.toolbar {
+	color : #808080;
+	text-decoration : none;
+	display: block;
+	border: 1px solid #DDD;
+	width: 50px;
+	padding: 2px 1px 2px 1px;
+}
+#toolbar a.toolbar:hover {
+	color : #C64934;
+	border: 1px solid #c24733;
+	background-color: #f1e8e6;
+	padding: 3px 0px 1px 2px;
+}
+#toolbar a.toolbar:active {
+	color : #FF9900;
+}
+#toolbar2 {
+	font-size: 11px;
+}
+#toolbar2 tr{
+	background: #F1F3F5;
+}
+#toolbar2 td img {
+	border: 0px;
+}
+#toolbar2 a {
+	color : #808080;
+	text-decoration : none;
+	display: block;
+	border: 2px solid #DDD;
+	width: 90px;
+	height: 80px;
+	padding: 10px 1px 2px 1px;
+}
+#toolbar2 a:hover {
+	color : #C64934;
+	border: 1px solid #c24733;
+	background-color: #f1e8e6;
+	padding: 3px 0px 1px 2px;
+}
+#toolbar2 a:active {
+	color : #FF9900;
+}
+#printButton {
+	font-size: 11px;
+}
+#printButton tr{
+	background: #F1F3F5;
+}
+#printButton td img {
+	border: 0px;
+}
+#printButton a {
+	color : #808080;
+	text-decoration : none;
+	display: block;
+	border: 1px solid #DDD;
+	width: 60px;
+	height: 40px;
+	padding: 10px 0px 10px 0px;
+}
+#printButton a:hover {
+	color : #C64934;
+	border: 1px solid #c24733;
+	background-color: #f1e8e6;
+}
+#printButton a:active {
+	color : #FF9900;
+}
+.imgtitle{
+	padding-left: 10px;
+	width: 40px;
+	vertical-align: middle;
+}
+#imgLink {
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+#imgLink a:link, #imgLink a:visited {
+	background-color: #FFFFFF;
+}
+#imgLink a:hover {
+	display: block;
+	padding: 5px;
+	background-color: #FF4B5A;
+}
+#display {
+	border: 1px double #000;
+	border-collapse: collapse;	
+	font-size: 11px;
+	width: 100%;
+	background-color: #fff;
+	padding: 3px;
+}
+#display th {
+	background-color: #0065CB;
+	color: #fff;
+	line-height: 19px;
+	border-top: 1px solid #0084B5;
+	border-bottom: 1px solid #0084B5;
+}
+#display td {
+	background-color: #E1F4FD;
+	padding: 1px;
+	border: 1px solid #fff;	
+}
+#display img{
+	border-style: none;
+}
+#display a{
+	color: #ccc;
+}
+#display a:hover, a:visited {
+	color: #000;
+}
+#detail {
+	background-color: #fff;
+}
+#detail th {	
+	text-align: left;
+	margin: 0px;
+	padding: 6px 4px 6px 4px;
+	height: 25px;
+	font-size: 11px;
+	color: #fff;
+	background-color: #0065CB;
+}
+#detail td {
+	text-align: left;
+	padding-left: 5px;
+	font-size: 11px;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #E1F3FD;
+}
+#detail td input, select, textarea {
+	border: 1px solid #cccccc;
+	background-color: #fff;
+}
+#detail td input:hover,
+#detail td input:focus,
+#detail td select:focus,
+#detail td select:focus,
+#detail td textarea:hover, 
+#detail td textarea:focus { 
+  color : #000;  
+  border : 1px solid #0000ff;
+  background-color : #fff;
+}
+#detail img{
+	border: 4px solid #fff;
+}
+.row0 {
+	background-color: #fff;
+}
+.row1 {
+	background-color: #E1F4FD;
+}
+#poll {
+	background-color: #FF0000;
+	color: #FF0000;	
+}
+#tanya {
+	font-family: Georgia;
+	text-align: center;
+	font-style: bold;
+	color: #000000;
+}
+.text_area {
+    border: 1px solid #ccc;
+    z-index: -3;
+    font-size: 11px;
+}
+.pagenav {
+	font-size : 10px;
+	text-transform: lowercase;
+}
+.label {
+	font-family: georgia, geneva, tahoma;
+	font-size: 19px;
+	font-weight: bold;
+	padding: 10px 0 0px 10px;
+	border-bottom: 1px solid #9fc5e8;
+	color: #000;
+	text-align: left;
+}
+.label2 {
+	font-family: georgia, geneva, tahoma;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0 0px 10px;
+	color: #cc0000;
+	text-align: left;
+}
+.labelkecil {
+	font-family: tahoma, arial;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
+.menubackground {
+	background: #F1F3F5;
+	border-bottom: 1px solid #cccccc;
+}
+.menudottedline {
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #ffffff;
+	background-color: #F1F3F5;
+}
+#sddm {	
+	margin: 0;
+	padding: 0;
+	z-index: 30;
+}
+#sddm li{	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: normal 11px arial
+}
+#sddm li a{	
+	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	background: #F1F3F5;
+	color: #303030;
+	text-align: center;
+	text-decoration: none
+}
+#sddm li a:hover{	
+	background: #FFF;
+}
+#sddm div{	
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #A7A7A7;
+}
+#sddm div a	{	
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #F1F3F5;
+	color: #303030;
+	font: 11px arial;
+	border-bottom: 1px solid #DADADA;
+}
+#sddm div a:hover{	
+	background: #FFF;
+}
+.ctr {
+	text-align: center;
+}
+.login-form {
+	text-align: left;
+	float: right;
+	width: 60%;
+}
+.form-block {
+	border: 1px solid #cccccc;
+	background: #E9ECEF;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+#wrapper {width:300px; margin:50px auto}
+.form {float:left; padding:0 10px 10px 10px; background:#f3f3f3; border:2px solid #cfcfcf}
+.form label {float:left; width:100px; padding:10px 10px 0 0; font-weight:bold}
+.form select {float:left; width:146px; margin-top:10px}
+.form input {float:left; margin-top:10px}
+.form .submit {clear:both}
+#msg {display:none; position:absolute; z-index:200; background:url(../images/msg_arrow.gif) left center no-repeat; padding-left:7px}
+#msg2 {display:none; position:absolute; z-index:200; background:url(../images/msg_arrow2.gif) left center no-repeat; padding-left:7px}
+#msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}

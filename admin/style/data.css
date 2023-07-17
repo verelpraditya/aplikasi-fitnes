@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+a
+{
+	text-decoration:none;
+	color:#09F;
+}
+a:hover
+{
+	color:#9C0;
+}
+td{
+	border:none;
+}
+#nojarak{
+	padding:0px;	
+}
+#tom{
+	text-decoration:none;
+	padding:3px 5px;
+	color:#FFF;
+	margin-right:1px;
+	background-color:#0089d7;
+	border:1px solid #FFF;
+	float:left;
+}
+#tom:hover{
+	background-color:#005f96;
+}
+#tbl_jarak{
+	margin-bottom:14px;
+}
