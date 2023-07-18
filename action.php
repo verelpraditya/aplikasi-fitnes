@@ -60,9 +60,30 @@ if ($cekNIK) {
 				$sqlUpdateKuota = "UPDATE member SET kuota='$updatedKuota' WHERE id_member='$_POST[id]'";
 				$myDb->update($sqlUpdateKuota);				
 			}elseif($result['jam_masuk'] != '') {
+				// Mengambil selisih jam masuk dan jam pulang
+				$pjam = $result['jam_masuk'];
+				$queryjam = "SELECT timediff('$pjam', '$jam') as selisih";
+				$hasil = mysql_query($queryjam);
+				$data = mysql_fetch_array($hasil);
+				$totaljam = $data['selisih'];
+				$waktu = explode(":", $totaljam);
+
+				$jam_detik = intval($waktu[0]) * 3600; // konversi jam ke detik
+				$menit_detik = intval($waktu[1]) * 60; // konversi menit ke detik
+				$detik = intval($waktu[2]);
+
+				$total_detik = $jam_detik + $menit_detik + $detik;
+
+
+				if($total_detik <= '300'){
+					$error = "Waktu Kurang Dari 5 Menit";
+					header('location:index.php?error=' . urlencode($error));
+					exit;
+				}else{
 				$counter = $myDb->selectOne("SELECT MAX(counter)+1 FROM absensi");				
 				$sql = "UPDATE absensi SET jam_pulang='$jam', counter='$counter' WHERE id_member = '$_POST[id]' AND tgl = '$tgl'";
 				$myDb->update($sql);
+				}
 			}else {
 				$counter = $myDb->selectOne("SELECT MAX(counter)+1 FROM absensi");				
 				$sql = "INSERT INTO absensi(id_member, tgl, kd_waktu, jam_masuk, counter) VALUES('$_POST[id]', '$tgl', '$hari', '$jam', '$counter')";

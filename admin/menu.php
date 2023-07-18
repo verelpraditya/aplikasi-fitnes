@@ -12,7 +12,8 @@ if ($_SESSION['level'] == "admin")
     <li><a href=pembayaran.php>Perpanjangan Member</a></li> 
 	<li><a href=member.php><span>Member</span></a></li>  	
 	<li><a href=index.php?halaman=instruktur><span>Instruktur</span></a></li>	
-	<li><a href=index.php?halaman=golongan><span>Type Member</span></a></li>      	      	
+	<li><a href=index.php?halaman=golongan><span>Type Member</span></a></li>
+	<li><a href=report.php>Report</a></li>      	      	
 	<li><a href=monitoring.php>Monitoring</a></li>
 	<li><a href=index.php?halaman=user>User</a></li>
     <li><a href=logout.php>Keluar</a></li>
@@ -30,7 +31,8 @@ else if ($_SESSION['level'] == "user")
     <li><a href=pembayaran.php>Perpanjangan Member</a></li> 
 	<li><a href=member.php><span>Member</span></a></li>  	
 	<li><a href=index.php?halaman=instruktur><span>Instruktur</span></a></li>	
-	<li><a href=index.php?halaman=golongan><span>Type Member</span></a></li>      	      	
+	<li><a href=index.php?halaman=golongan><span>Type Member</span></a></li>
+	<li><a href=report.php>Report</a></li>       	      	      	      	
     <li><a href=logout.php>Keluar</a></li>
     </ul>";
 }else{
