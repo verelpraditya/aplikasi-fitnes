@@ -38,10 +38,7 @@
 						<td height="20"><strong>Jam Masuk</strong></td>
 						<td> : <b><?php echo($result['jam_masuk']); ?></b></td>
 					</tr>
-					<tr>
-						<td height="20"><strong>Jam Keluar</strong></td>
-						<td> : <b><?php echo($result['jam_pulang']); ?></b></td>
-					</tr>
+					
 					<tr>
 						<td height="20"><strong>Sisa Kuota</strong></td>
 						<td> : <b<?php if ($result['kuota'] == 1) echo ' class="blinking-text"'; ?>><?php echo $result['kuota']; ?> Kali Kunjungan</b></td>
