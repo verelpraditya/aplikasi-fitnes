@@ -89,7 +89,7 @@ require_once "library/fungsi_indotgl.php";
 	else{
 	$posisi = ($halaman-1) * $batas;
 	}
-	$qp_sup=mysql_query("SELECT * FROM absensi,member WHERE absensi.id_member=member.id_member AND absensi.pulang = 1 order by absensi.tgl DESC LIMIT $posisi,$batas");
+	$qp_sup=mysql_query("SELECT * FROM absensi,member WHERE absensi.id_member=member.id_member AND absensi.pulang = 0 order by absensi.tgl DESC LIMIT $posisi,$batas");
 	$no=$posisi+1;
 		while($row1=mysql_fetch_array($qp_sup)){
 			if ($warna==$warna1){
