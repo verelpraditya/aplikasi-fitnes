@@ -48,13 +48,13 @@ require_once "library/fungsi_indotgl.php";
           <td id="noborder"><label>
           <select name="pilih" id="input"> 
 		  <option value='absensi.id_member' >ID Member</option>
-	      <option value='absensi.tgl' >Tgl Masuk</option> 
+	      <!-- <option value='absensi.tgl' >Tgl Masuk</option>  -->
 	      
           </select>
           </label></td>
           <td id="noborder">
             <input type="text" name="tcari" id="input" />
-			<a href="javascript:void(0)" onClick="if(self.gfPop)gfPop.fPopCalendar(document.form.tcari);return false;" ><img src="style/calender/calender.jpeg" alt="" name="popcal" width="34" height="29" border="0" align="absmiddle" id="popcal" /></a>				
+			<!-- <a href="javascript:void(0)" onClick="if(self.gfPop)gfPop.fPopCalendar(document.form.tcari);return false;" ><img src="style/calender/calender.jpeg" alt="" name="popcal" width="34" height="29" border="0" align="absmiddle" id="popcal" /></a>				 -->
             <input type="submit" name="bcari" id="tombol" value="cari data" />
           </td>
         </tr>
@@ -89,7 +89,7 @@ require_once "library/fungsi_indotgl.php";
 	else{
 	$posisi = ($halaman-1) * $batas;
 	}
-	$qp_sup=mysql_query("SELECT * FROM absensi,member WHERE absensi.id_member=member.id_member order by absensi.tgl DESC LIMIT $posisi,$batas");
+	$qp_sup=mysql_query("SELECT * FROM absensi,member WHERE absensi.id_member=member.id_member AND absensi.pulang = 0 order by absensi.tgl DESC LIMIT $posisi,$batas");
 	$no=$posisi+1;
 		while($row1=mysql_fetch_array($qp_sup)){
 			if ($warna==$warna1){
@@ -110,7 +110,7 @@ require_once "library/fungsi_indotgl.php";
 		  <td><?php echo "$row1[alamat]"; ?></td>
           <td><?php echo tgl_indo("$row1[tgl]"); ?></td>
           <td><?php echo "$row1[jam_masuk]"; ?></td>
-	  	  <td><?php echo "$row1[jam_pulang]"; ?></td>		  
+	  	  <td>hapus</td>		  
 	  </tr>
 	<?php $no++; }
 	echo"</table>";
