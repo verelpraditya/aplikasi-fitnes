@@ -155,7 +155,7 @@ $myTime = new indoTime();
 			$total=$bpen+$bmem; 
 			$lokasi_file=$_FILES[gambar][tmp_name];
 			if(empty($lokasi_file)){
-			notifRegister($_POST['no_tlpn'], $_POST['nama_mem'], $_POST['kuota'], $tgl_expired, $barcode);
+			notifRegister($_POST['no_tlpn'], $_POST['nama_mem'], $_POST['kuota'], $tgl_expired, $barcode, $_POST['id_golongan']);
 			$reg="INSERT INTO registrasi(`no_registrasi`, `id_member`,`nama_member`, `nama_golongan`, `tanggal_pendaftaran`, `biaya_pendaftaran`,`biaya_member`) VALUES ('$_POST[no_reg]','$id_member','$_POST[nama_mem]','$_POST[id_golongan]','$_POST[tgl_reg]', '$_POST[biaya_adm]', '$_POST[biaya_mem]')";
 			mysql_query($reg);
 			$mem="INSERT INTO member(`id_member`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `no_telepon`, `status`, `tgl_tempo`, `kuota`, `gambar`) VALUES ('$id_member', '$_POST[nama_mem]', '$_POST[alamat_mem]', '$_POST[tmp_mem]', '$_POST[tgl_mem]', '$_POST[jenis_kelamin]', '$_POST[no_tlpn]', 'aktif', '$tgl_expired', '$_POST[kuota]', 'member_default.jpg')";
@@ -165,7 +165,7 @@ $myTime = new indoTime();
 			lompat_ke("pembayaran.php");
 			break;	
 			}else{
-			notifRegister($_POST['no_tlpn'], $_POST['nama_mem'], $_POST['kuota'], $tgl_expired, $barcode);
+			notifRegister($_POST['no_tlpn'], $_POST['nama_mem'], $_POST['kuota'], $tgl_expired, $barcode, $_POST['id_golongan']);
 			$lokasi_file=$_FILES[gambar][tmp_name];
 			$nama_file=$_FILES[gambar][name];
 			move_uploaded_file($lokasi_file,"image_mem/$nama_file");

@@ -27,7 +27,7 @@ function notifLogin($nowa, $nama, $kuota, $expired) {
     return $response;
 }
 
-function notifRegister($nowa, $nama, $kuota, $expired, $image) {
+function notifRegister($nowa, $nama, $kuota, $expired, $image, $type) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
@@ -42,7 +42,7 @@ function notifRegister($nowa, $nama, $kuota, $expired, $image) {
         CURLOPT_POSTFIELDS => array(
             'phone' => $nowa,
             'image' => $image,
-            'caption' => "Halo {$nama},\n\nKamu Berhasil Registrasi!\nKuota: {$kuota}\nExpired: {$expired}"
+            'caption' => "Halo {$nama},\n\n*Kamu Berhasil Registrasi!*\nType Member: {$type}\nKuota: {$kuota}\nExpired: {$expired}"
         ),
         CURLOPT_HTTPHEADER => array(
             'Authorization: wGb8cNRwZUcGMqMoN8V12dxEDEiu9DY6xHUUGrj72302UgKZAfHsSspWoBXhBiwD'
