@@ -143,7 +143,7 @@ $myTime = new indoTime();
 			$noUrut1 = (int) substr($idMax1, 5, 4);
 			$noUrut1++;
 			$id_member = $jenis1 . sprintf("%03s", $noUrut1);
-			$barcode = 'https://barcodeapi.org/api/qr/' . $id_member;
+			$barcode = 'https://barcodeapi.org/api/128/' . $id_member;
 
 			// Untuk menentukan Expired
 			$expired = $_POST['expired'];
