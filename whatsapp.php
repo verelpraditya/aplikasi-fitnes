@@ -14,7 +14,7 @@ function notifLogin($nowa, $nama, $kuota, $expired) {
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => array(
             'phone' => $nowa,
-            'message' => "Halo {$nama},\n\nKamu Berhasil Check-in!\nSisa Kuota: {$kuota}\nExpired: {$expired} Hari lagi"
+            'message' => "Halo {$nama},\n\nSelamat Kamu Berhasil Check-in!\nSisa Kuota: {$kuota}\nExpired: {$expired} Hari lagi"
         ),
         CURLOPT_HTTPHEADER => array(
             'Authorization: lzozhtu6beY6WS0buhhze5ch8MOpwhK5uKrxsTmwvrcaEekd8NnYbb2UOsUM7Xh3'
