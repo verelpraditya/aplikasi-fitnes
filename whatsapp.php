@@ -17,7 +17,7 @@ function notifLogin($nowa, $nama, $kuota, $expired) {
             'message' => "Halo {$nama},\n\nKamu Berhasil Check-in!\nSisa Kuota: {$kuota}\nExpired: {$expired} Hari lagi"
         ),
         CURLOPT_HTTPHEADER => array(
-            'Authorization: wGb8cNRwZUcGMqMoN8V12dxEDEiu9DY6xHUUGrj72302UgKZAfHsSspWoBXhBiwD'
+            'Authorization: lzozhtu6beY6WS0buhhze5ch8MOpwhK5uKrxsTmwvrcaEekd8NnYbb2UOsUM7Xh3'
         ),
     ));
 
@@ -45,7 +45,7 @@ function notifRegister($nowa, $nama, $kuota, $expired, $image, $type) {
             'caption' => "Halo {$nama},\n\n*Kamu Berhasil Registrasi!*\nType Member: {$type}\nKuota: {$kuota}\nExpired: {$expired}"
         ),
         CURLOPT_HTTPHEADER => array(
-            'Authorization: wGb8cNRwZUcGMqMoN8V12dxEDEiu9DY6xHUUGrj72302UgKZAfHsSspWoBXhBiwD'
+            'Authorization: lzozhtu6beY6WS0buhhze5ch8MOpwhK5uKrxsTmwvrcaEekd8NnYbb2UOsUM7Xh3'
         ),
     ));
 
